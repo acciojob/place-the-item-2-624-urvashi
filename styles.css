@@ -1,13 +1,9 @@
-.holder{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	flex-direction: row;
-	/* border:1px solid black; */
-	height:200px;
-	flex-wrap: wrap; 
-	font-size:34px;
-	font-weight: bold;
+.holder {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  height: 200px;
 }
 
 .item{
@@ -19,17 +15,19 @@
     
 }
 .holder .item:nth-child(1) {
-  background-color: green;      
+  background-color: red;      
   color: black; 
+	order: 2;
 }
 
 .holder .item:nth-child(2) {
-  background-color: red;      
-  color: black;  
+  background-color: blue;      
+  color: black; 
+	order:3;
 }
 
 .holder .item:nth-child(3) {
-  background-color: blue;      
+  background-color: green;      
   color: black;   
-	  order: 2;   
+   order: 1;   
 }
