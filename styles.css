@@ -1,2 +1,35 @@
+.holder{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: row;
+	border:1px solid black;
+	height:200px;
+	flex-wrap: wrap; 
+	font-size:34px;
+	font-weight: bold;
+}
 
-/* Your CSS Code here. */
+.item{
+	flex-wrap: wrap;
+	height: 100px;
+	width:100px;
+	text-align:center;
+	align-content:center
+    
+}
+.holder .item:nth-child(1) {
+  background-color: green;      
+  color: black; 
+}
+
+.holder .item:nth-child(2) {
+  background-color: red;      
+  color: black;  
+}
+
+.holder .item:nth-child(3) {
+  background-color: blue;      
+  color: black;   
+	  order: 2;   
+}
